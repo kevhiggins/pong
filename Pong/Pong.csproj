@@ -57,6 +57,7 @@
   <ItemGroup>
     <Content Include="Icon.ico" />
     <None Include=".gitignore" />
+    <None Include="TODO.md" />
   </ItemGroup>
   <ItemGroup>
     <MonoGameContentReference Include="Content\Content.mgcb" />
