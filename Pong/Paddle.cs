@@ -10,6 +10,8 @@ namespace Pong
         public Vector2 Position;
         public PlayerIndex PlayerIndex;
 
+        private const int Speed = 4;
+
         public Rectangle Bounds => new Rectangle((int)Position.X, (int)Position.Y, Texture.Width, Texture.Height);
 
         public Paddle(Texture2D texture, Vector2 position, PlayerIndex playerIndex)
@@ -25,12 +27,12 @@ namespace Pong
 
             if (gamePadState.DPad.Down == ButtonState.Pressed)
             {
-                Position.Y += 2;
+                Position.Y += Speed;
             }
 
             if (gamePadState.DPad.Up == ButtonState.Pressed)
             {
-                Position.Y -= 2;
+                Position.Y -= Speed;
             }
 
             if (Position.Y + Texture.Height > graphicsDevice.Viewport.Height)

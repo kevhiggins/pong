@@ -8,7 +8,7 @@ namespace Pong
         public Vector2 Direction;
         public bool IsActive = false;
         public Vector2 Position;
-        public int Speed = 5;
+        public int Speed = 8;
         public Texture2D Texture;
 
         public Ball(Texture2D texture, Vector2 position)
