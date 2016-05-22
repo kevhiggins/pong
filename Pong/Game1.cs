@@ -133,6 +133,7 @@ namespace Pong
             }
 
             // Check if a goal has been made.
+            // On score, Reset positions.
             if (ball.Position.X + ball.Texture.Width > GraphicsDevice.Viewport.Width)
             {
                 player1Score++;
@@ -142,8 +143,6 @@ namespace Pong
                 player2Score++;
                 Reset();
             }
-
-            // On score, Reset positions.
 
             base.Update(gameTime);
         }
